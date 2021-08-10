@@ -15,12 +15,36 @@ html, body {
 
 .sub-intro {
   font-size: 32px;
+  font-family: 'Caveat', cursive;
 }
 
 .logo {
+  margin-top: -15%;
   margin-bottom: -15%;
 }
-/* PRE MATERIAL DESIGN
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.mdc-card {
+  font-family: 'Amarante', cursive;
+  padding: 5%;
+}
+
+.card-links, .social {
+  font-family: 'Amarante', cursive;
+  color: white;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+
+/* Pre-update 0.2.0
 .what-do {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
