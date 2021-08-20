@@ -19,7 +19,7 @@ html, body {
 
 .logo {
   margin-top: -15%;
-  margin-bottom: -15%;
+  margin-bottom: -17%;
 }
 
 .tab {
@@ -34,9 +34,20 @@ html, body {
   line-height: 0.1em;
 }
 
+.T {
+  background-color: #4F42B4;
+}
+
+.M {
+  background-color: #4C74A6
+}
+
+.E {
+  background-color: #48BF92;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  background-color: inherit;
   float: left;
   border: none;
   outline: none;
@@ -83,15 +94,35 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2%;
+  margin-bottom: 0.5%;
   align-items: stretch;
   flex-basis: auto;
   width: 100%;
 }
 
-.btn-group button {
-  background-color: #04AA6D; /* Green background */
-  border: 1px solid green; /* Green border */
+.tech-group button{
+  background-color: #4E5BAD;
+  border: 1px solid white; 
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 33%;
+  padding: 3%;
+  font-family: 'Amarante', cursive;
+}
+.music-group button {
+  background-color: #4B8DA0;
+  border: 1px solid white; 
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 33%;
+  padding: 3%;
+  font-family: 'Amarante', cursive;
+}
+.etc-group button {
+  background-color: #49A699;
+  border: 1px solid white;
   color: white; /* White text */
   padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
@@ -113,10 +144,13 @@ html, body {
 
 /* Add a background color on hover */
 .btn-group button:hover {
-  background-color: #3e8e41;
+  background-color: white;
+  color: black;
 }
 
-
+.close {
+  margin: 0;
+}
 /* Pre-update 0.2.0
 .what-do {
   display: grid;
