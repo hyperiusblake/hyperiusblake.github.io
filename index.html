@@ -21,31 +21,34 @@
 	<!--Cards containing links, information-->
 	<section class="info">
 		<div class="tab">
-			<button class="tablinks" onclick="openTab(event, 'Tech')">Tech</button>
-			<button class="tablinks" onclick="openTab(event, 'Music')">Music</button>
-			<button class="tablinks" onclick="openTab(event, 'Etc.')">Etc.</button>
+			<button class="tablinks" onclick="openTab(event, 'Tech')"><i class="fa fa-desktop"></i><p class="title">Tech</p>I build things, break things, and solve problems with various tools.</button>
+			<button class="tablinks" onclick="openTab(event, 'Music')"><i class="fa fa-music"></i><p class="title">Music</p>I perform, arrange, compose, and lead a music collective (known as a "band" to some).</button>
+			<button class="tablinks" onclick="openTab(event, 'Etc.')"><i class="fa fa-heart"></i><p class="title">Etc.</p>My work that isn't so easily categorized. I do lots of different things!</button>
 		  </div>
 	</section>
 	<section class="info-links">
 		<div id="Tech" class="tabcontent">
-			<h3>Tech</h3>
-			<p>some info</p>
-			<p class="card">some info</p>
-			<p class="card">some info</p>
+			<div class="btn-group">
+				<button>Here's an example of some short content.</button>
+				<button>This is a little longer, potentially creating problems with CSS.</button>
+				<button>I doubt any of these will be longer than this, so here's a placeholder for the max amount of text.</button>
+			  </div>
 			<button onclick="this.parentElement.style.display='none'">close tab</button>
 		  </div>
 		  <div id="Music" class="tabcontent">
-			<h3>Music</h3>
-			<p class="card">some info</p>
-			<p class="card">some info</p>
-			<p class="card">some info</p>
+			<div class="btn-group">
+				<button>1</button>
+				<button>2</button>
+				<button>3</button>
+			  </div>
 			<button onclick="this.parentElement.style.display='none'">close tab</button>
 		  </div>
 		  <div id="Etc." class="tabcontent">
-			<h3>Etc.</h3>
-			<p class="card">some info</p>
-			<p class="card">some info</p>
-			<p class="card">some info</p>
+			<div class="btn-group">
+				<button>1</button>
+				<button>2</button>
+				<button>3</button>
+			  </div>
 			<button onclick="this.parentElement.style.display='none'">close tab</button>
 		  </div>
 	</section>

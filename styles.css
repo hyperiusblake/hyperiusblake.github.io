@@ -1,11 +1,10 @@
 
 html, body {
   margin:0px;
-  background-color: black;
+  background-color:rgb(4,4,4);
 }
 
 .intro {
-  background-color: black;
   background-position: center;
   font-size: 80px;
   color: white;
@@ -29,6 +28,12 @@ html, body {
   background-color: #f1f1f1;
 }
 
+.title {
+  font-weight: bolder;
+  font-size: 147%;
+  line-height: 0.1em;
+}
+
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
@@ -38,6 +43,10 @@ html, body {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  width: 33%;
+  font-family: 'Caveat', cursive;
+  font-weight: 150;
+  font-size: 125%;
 }
 
 /* Change background color of buttons on hover */
@@ -53,9 +62,14 @@ html, body {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 12px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+.info, .info-links {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .info-links, .social {
@@ -63,6 +77,43 @@ html, body {
   color: white;
   text-align: center;
   margin-bottom: 5%;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2%;
+  align-items: stretch;
+  flex-basis: auto;
+  width: 100%;
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 33%;
+  padding: 3%;
+  font-family: 'Amarante', cursive;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
 }
 
 
