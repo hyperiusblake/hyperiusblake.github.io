@@ -19,35 +19,37 @@
 		<p class="sub-intro">developer | creator | humanist</p>
 	</section>
 	<!--Cards containing links, information-->
-	<section class="cards">
-		<div class="mdc-card" id="tech">
-			<div class="mdc-card-content">
-				<p class="card-title">Tech</p>
-				More Content?
-			</div>
-		</div>
-		<div class="mdc-card" id="music">
-			<div class="mdc-card-content">
-				<p class="card-title">Music</p>
-				More Content?
-			</div>
-		</div>
-		<div class="mdc-card" id="etc">
-			<div class="mdc-card-content">
-				<p class="card-title">Etc.</p>
-				More Content?
-			</div>
-		</div>
+	<section class="info">
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Tech')">Tech</button>
+			<button class="tablinks" onclick="openTab(event, 'Music')">Music</button>
+			<button class="tablinks" onclick="openTab(event, 'Etc.')">Etc.</button>
+		  </div>
 	</section>
-	<section class="card-links">
-		<!--This will be hidden until the corresponding card is clicked-->
+	<section class="info-links">
+		<div id="Tech" class="tabcontent">
+			<h3>Tech</h3>
+			<p>some info</p>
+			<p class="card">some info</p>
+			<p class="card">some info</p>
+		  </div>
+		  <div id="Music" class="tabcontent">
+			<h3>Music</h3>
+			<p class="card">some info</p>
+			<p class="card">some info</p>
+			<p class="card">some info</p>
+		  </div>
+		  <div id="Etc." class="tabcontent">
+			<h3>Etc.</h3>
+			<p class="card">some info</p>
+			<p class="card">some info</p>
+			<p class="card">some info</p>
+		  </div>
 	</section>
 	<section class="social">
 		<p>[placeholder for social section]</p>
 	</section>
-
 </body>
-
 </html>
 
 <!-- Pre update 0.2.0
