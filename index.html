@@ -25,8 +25,7 @@
 				<p class="title">Tech</p>I build things, break things, and solve problems with various tools.
 			</button>
 			<button class="tablinks M" onclick="openTab(event, 'Music')"><i class="fa fa-music"></i>
-				<p class="title">Music</p>I perform, arrange, compose, and lead a music collective (known as a "band" to
-				some).
+				<p class="title">Music</p>I perform, arrange, compose, and lead a music collective (known more commonly as a "band").
 			</button>
 			<button class="tablinks E" onclick="openTab(event, 'Etc.')"><i class="fa fa-heart"></i>
 				<p class="title">Etc.</p>My work that isn't so easily categorized. I do lots of different things!
@@ -41,7 +40,7 @@
 				<button>I doubt any of these will be longer than this, so here's a placeholder for the max amount of
 					text.</button>
 			</div>
-			<button class="close" onclick="this.parentElement.style.display='none'">close tab</button>
+			<button class="close" onclick="closeTab()">close tab</button>
 		</div>
 		<div id="Music" class="tabcontent">
 			<div class="btn-group music-group">
@@ -49,7 +48,7 @@
 				<button>2</button>
 				<button>3</button>
 			</div>
-			<button class="close" onclick="this.parentElement.style.display='none'">close tab</button>
+			<button class="close"  onclick="closeTab()">close tab</button>
 		</div>
 		<div id="Etc." class="tabcontent">
 			<div class="btn-group etc-group">
@@ -57,7 +56,7 @@
 				<button>2</button>
 				<button>3</button>
 			</div>
-			<button class="close" onclick="this.parentElement.style.display='none'">close tab</button>
+			<button class="close"  onclick="closeTab()">close tab</button>
 		</div>
 	</section>
 
