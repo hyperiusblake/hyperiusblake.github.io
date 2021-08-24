@@ -19,6 +19,34 @@ a {
 .sub-intro {
   font-size: 32px;
   font-family: 'Caveat', cursive;
+  animation: pulsate 2.5s infinite alternate;    
+}
+
+@keyframes pulsate {
+  100% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 8px rgb(98, 0, 255),
+      0 0 10px rgb(98, 0, 255),
+      0 0 12px rgb(11, 11, 231),
+      0 0 14px #4B8DA0,
+      0 0 18px #4B8DA0,
+      0 0 18px #48BF92;
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 6px rgb(98, 0, 255),
+      0 0 8px rgb(98, 0, 255),
+      0 0 12px rgb(98, 0, 255),
+      0 0 14px rgb(98, 0, 255),
+      0 0 18px rgb(98, 0, 255);
+  }
 }
 
 .logo {
