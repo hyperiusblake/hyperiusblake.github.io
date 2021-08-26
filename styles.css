@@ -129,7 +129,7 @@ a {
   width: 100%;
 }
 
-.tech-group button{
+.tech-group a {
   background-color: #4E5BAD;
   border: 1px solid white; 
   color: white; /* White text */
@@ -139,7 +139,7 @@ a {
   padding: 3%;
   font-family: 'Amarante', cursive;
 }
-.music-group button {
+.music-group a {
   background-color: #4B8DA0;
   border: 1px solid white; 
   color: white; /* White text */
@@ -149,7 +149,7 @@ a {
   padding: 3%;
   font-family: 'Amarante', cursive;
 }
-.etc-group button {
+.etc-group a {
   background-color: #49A699;
   border: 1px solid white;
   color: white; /* White text */
@@ -172,7 +172,7 @@ a {
 }
 
 /* Add a background color on hover */
-.btn-group button:hover {
+.btn-group a:hover {
   background-color: white;
   color: black;
 }
