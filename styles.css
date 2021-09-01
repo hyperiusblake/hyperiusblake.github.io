@@ -124,39 +124,43 @@ a {
   flex-flow: wrap;
   justify-content: center;
   margin-bottom: 0.5%;
-  align-items: stretch;
+  align-items: center;
   flex-basis: auto;
+  text-align: center;
   width: 100%;
+}
+
+.btn-group a {
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .tech-group a {
   background-color: #4E5BAD;
   border: 1px solid white; 
   color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   width: 33%;
-  padding: 3%;
+  padding: 1%;
   font-family: 'Amarante', cursive;
 }
 .music-group a {
   background-color: #4B8DA0;
   border: 1px solid white; 
   color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   width: 25%;
-  padding: 3%;
+  padding: 1%;
+  text-align: center;
   font-family: 'Amarante', cursive;
 }
 .etc-group a {
   background-color: #49A699;
   border: 1px solid white;
   color: white; /* White text */
-  padding: 10px 24px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   width: 33%;
-  padding: 3%;
+  padding: 1%;
   font-family: 'Amarante', cursive;
 }
 
@@ -179,6 +183,13 @@ a {
 
 .close {
   margin: 0;
+  background-color: crimson;
+  border-style: none;
+  font-weight: bolder;
+}
+
+.close:hover {
+  background-color: rgb(216, 72, 101);
 }
 
 /* Social Media Bar */
