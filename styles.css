@@ -129,8 +129,17 @@ h1 {
 
 /* Content */
 .content {
+  color: black;
   background-color: white;
   padding: 10px;
+}
+
+a, .content {
+  color: black;
+}
+
+a:hover, .content {
+  color: darkgray;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
