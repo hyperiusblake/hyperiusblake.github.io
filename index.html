@@ -9,38 +9,53 @@
 	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 	<script type="text/javascript" src="query.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<section class="intro">
-		<img class="logo" src="logo-svg.svg" alt="Robin-D-Blake-III" />
-		<p class="sub-intro">developer | creator | humanist</p>
-	</section>
-	<!--Cards containing links, information-->
-	<section class="info">
-		<div class="tab">
-			<button class="tablinks T" onclick="openTab(event, 'Tech')"><i class="fa fa-desktop"></i>
-				<p class="title">Tech</p>I build things, break things, and solve problems with various tools.
-			</button>
-			<button class="tablinks M" onclick="openTab(event, 'Music')"><i class="fa fa-music"></i>
-				<p class="title">Music</p>I perform, arrange, compose, and lead a music collective (known more commonly as a "band").
-			</button>
-			<button class="tablinks E" onclick="openTab(event, 'Etc.')"><i class="fa fa-heart"></i>
-				<p class="title">Etc.</p>My work that isn't so easily categorized. I do lots of different things!
-			</button>
+	<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+		<h1>Robin Blake</h1>
+		<h2>developer | creator | humanist</h2>
+		<p>Hello! I'm currently a fellow in Google's Black+ Dev Program learning Android Development. Get to know me using the provided links!</p>
+	  </div>
+	  
+	  <div style="overflow:auto">
+		<div class="menu">
+		  <a href="tech.html" class="tech">Tech</a>
+		  <a href="music.html" class="music">Music</a>
+		  <a href="etc.html" class="etc">Etc.</a>
+		  <a href="contact.html" class="contact">Contact</a>
 		</div>
-	</section>
-	<section class="info-links">
-		<div id="Tech" class="tabcontent">
-			<div class="btn-group tech-group">
-				<a href="https://github.com/hyperiusblake">My Github</a>	
-			</div>
-			<button class="close" onclick="closeTab()">minimize</button>
+	  
+		<div class="main">
+			<img class="logo" src="logo-svg.svg" alt="Robin-D-Blake-III" />
 		</div>
-		<div id="Music" class="tabcontent">
-			<div class="btn-group music-group">
+	  
+		<div class="right">
+		  <h2>this is where I'm planning to embed a playlist!</h2>
+		</div>
+	  </div>
+	  
+	  <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright Robin Blake 2021</div>
+	<!-- <img class="logo" src="logo-svg.svg" alt="Robin-D-Blake-III" />
+	<p class="intro-text">Hello! <br><br> My name is Robin Blake, and I'm currently a member of Google's Black+ Dev Program! Learn more about me usng the links below!</p>
+	<nav>
+		<ul>
+		  <li><a href="tech.html"><i class="fa fa-laptop" aria-hidden="true"></i><p class="navlink">Tech</p></a></li>
+		  <li><a href="music.html"><i class="fa fa-music" aria-hidden="true"></i><p class="navlink">Music</p></a></li>
+		  <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><strong><p class="navlink">HOME</p></a></strong></li>
+		  <li><a href="etc.html"><i class="fa fa-cogs" aria-hidden="true"></i><p class="navlink">Etc.</p></a></li>
+		  <li><a href="contact.html"><i class="fa fa-address-book" aria-hidden="true"></i><p class="navlink">Contact</p></a></li>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</ul>
+	  </nav> -->
+</body>
+</html>
+
+<!--
+
 				<a href="https://open.spotify.com/user/barisax0228?si=czpoOx-XTUCpogC3nu70vg&ltclid=">Spotify: Check out my epic playlists.</a>
 				<a href="http://robinblakesoundexperiment.com/">My music collective, the Robin Blake Sound Experiment.</a>	
 				<a href="https://clevelandclassical.com/cusp-nakatani-gong-orchestra-at-historic-st-johns-mar-30/">An article about the Nakatani Gong Orchestra, of which I was a participant in 2018, through the Cleveland Uncommon Sound Project (CUSP).</a>
@@ -75,62 +90,4 @@
 			</form>	
 		</section>
 	</div>
-</body>
-
-</html>
-
-<!-- Pre update 0.2.0
-	<section class="intro">
-	<img src="https://i.ibb.co/FgyrYM7/Robin-D-Blake-III.png" alt="Robin-D-Blake-III"/>
-	<p class="sub-intro">developer | creator | humanist</p>
-	</section>
-	<section class="what-do">
-		<a href="#tech-link"><div id="tech">
-			<i class="fa fa-desktop"></i>
-			<p>Tech<br>I'm currently in the Black+ Developer Program with Google. I write code, solve problems, and build things.</p></div></a>
-		<a href="#music-link"><div id="music">
-			<i class="fa fa-music"></i>
-			<p>Music<br>My passion is healing hearts and minds with sound. Performance, arrangments, composition.</p></div></a>
-		<a href="#creation-link"><div id="creation">
-			<i class="fa fa-heartbeat"></i>
-			<p>Community Engagement<br>I manage art festivals and advocate for people of marginalized identity.</p></div></a>
-	</section>
-	<section id="tech-link">
-		<a href="https://github.com/hyperiusblake/vending-machine" id="tech1">Here's a project I've worked on. A vending machine in C#.</a>
-		<a href="https://github.com/hyperiusblake/vending-machine" id="tech2">Here's another project I've worked on. A vending machine in C#.</a>
-	</section>
-	<section id="music-link">
-		<a href="https://robinblakesoundexperiment.com/">This is my music collective.</a>
-		<a href="https://soundcloud.com/user-386063300">Soundcloud, where I throw up snippets of work.</a>
-	</section>
-	<section id="creation-link">
-		<a href="">This is going to link to the Creation landing page (when I finish it!!!). This will be a short description of what it is and why I started it.</a>
-	</section>
-	<section class="contact">
-		<div class="icon-bar">
-			<a href="https://www.facebook.com/barisax228/"><i class="fa fa-facebook"></i></a> 
-			<a href="https://github.com/hyperiusblake"><i class="fa fa-github"></i></a> 
-			<a href="https://www.instagram.com/hyperiusblake/"><i class="fa fa-instagram"></i></a>
-			<a href="https://www.linkedin.com/in/robindeanblake/"><i class="fa fa-linkedin"></i></a> 
-		 </div>
-	<form action="" class="" style="max-width:600px">
-		<h3>Say Hey!</h3>
-
-		<label for="name2">Name</label><br><br>
-		<div><input type="text" id="name2" name="name" required></div>
-		<br>
-		<label for="email3">Email</label><br><br>
-		<div><input type="email"  id="email3" name="email" required><br>
-		<small class="form-text text-muted"> Please enter a valid email address</small>
-		</div>
-		<br>			
-		<label for="message6">Message</label><br><br>
-		<textarea class="form-control form-control-lg" id="message6" name="message" required></textarea><br><br>
-		<button class="btn btn-primary btn-lg" type="submit">Submit</button>
-	</form>
-	<button class="mdc-button foo-button">
-		<div class="mdc-button__ripple"></div>
-		<span class="mdc-button__label">Button</span>
-	  </button>
-	</section>
 -->

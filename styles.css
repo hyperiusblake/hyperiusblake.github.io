@@ -1,384 +1,200 @@
-
 html, body {
   margin:0px;
   background-color:rgb(4,4,4);
+  font-family: 'Amarante', cursive;
 }
 
 a {
   text-decoration: none;
 }
 
-.intro {
-  background-position: center;
-  font-size: 80px;
-  color: white;
-  text-align: center;
-  padding: 10% 0px;
-}
-
-.sub-intro {
-  font-size: 32px;
-  font-family: 'Caveat', cursive;
-  animation: pulsate 2.5s infinite alternate;    
-}
-
-@keyframes pulsate {
-  100% {
-    text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 8px rgb(98, 0, 255),
-      0 0 10px rgb(98, 0, 255),
-      0 0 12px rgb(11, 11, 231),
-      0 0 14px #4B8DA0,
-      0 0 18px #4B8DA0,
-      0 0 18px #48BF92;
-  }
-  0% {
-    /* Smaller blur radius */
-    text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 6px rgb(98, 0, 255),
-      0 0 8px rgb(98, 0, 255),
-      0 0 12px rgb(98, 0, 255),
-      0 0 14px rgb(98, 0, 255),
-      0 0 18px rgb(98, 0, 255);
-  }
-}
-
-.logo {
-  margin-top: -15%;
-  margin-bottom: -17%;
-}
-
-.tab {
-  overflow: hidden;
-  background-color:rgb(4,4,4);
-}
-
-.title {
-  font-weight: bolder;
-  font-size: 147%;
-  line-height: 0.1em;
-}
-
-.T {
-  background-color: #4F42B4;
-}
-
-.M {
-  background-color: #4C74A6
-}
-
-.E {
-  background-color: #48BF92;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  width: 33%;
-  font-family: 'Caveat', cursive;
-  font-weight: 150;
-  font-size: 125%;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 12px 12px;
-}
-
-.info, .info-links {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-.info-links, .social {
-  font-family: 'Amarante', cursive;
-  color: white;
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-.btn-group {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: center;
-  margin-bottom: 0.5%;
-  align-items: center;
-  flex-basis: auto;
-  text-align: center;
-  width: 100%;
-}
-
-.btn-group a {
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.tech-group a {
-  background-color: #4E5BAD;
-  border: 1px solid white; 
-  color: white; /* White text */
-  cursor: pointer; /* Pointer/hand icon */
-  width: 33%;
-  padding: 1%;
-  font-family: 'Amarante', cursive;
-}
-.music-group a {
-  background-color: #4B8DA0;
-  border: 1px solid white; 
-  color: white; /* White text */
-  cursor: pointer; /* Pointer/hand icon */
-  width: 25%;
-  padding: 1%;
-  text-align: center;
-  font-family: 'Amarante', cursive;
-}
-.etc-group a {
-  background-color: #49A699;
-  border: 1px solid white;
-  color: white; /* White text */
-  cursor: pointer; /* Pointer/hand icon */
-  width: 33%;
-  padding: 1%;
-  font-family: 'Amarante', cursive;
-}
-
-.btn-group button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
-
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Add a background color on hover */
-.btn-group a:hover {
-  background-color: white;
-  color: black;
-}
-
-.close {
-  margin: 0;
-  background-color: crimson;
-  border-style: none;
-  font-weight: bolder;
-}
-
-.close:hover {
-  background-color: rgb(216, 72, 101);
-}
-
-/* Social Media Bar */
-.contact-box {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 50%;
-  margin: auto;
-  margin-bottom: 5%;
-}
-
-.contact {
-  font-family: 'Amarante', cursive;
-}
-
-.contact-text {
-  font-size: 32px;
-  font-family: 'Caveat', cursive;
-  text-align: center;
-  color: white;
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: center;
-  background-image: linear-gradient(90deg, rgba(79, 66, 180, 1) 17%, rgba(72, 191, 146, 1) 100%);
-  width: 30%;
-  margin: auto;
-}
-
-.social .fa {
-  text-align: center;
-  text-decoration-line: none;
-  padding: 0.5%;
-  color: white;
-  margin: 5%;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.contact-box {
-  margin-top: 2.5%;
-}
-
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-image: linear-gradient(90deg, rgba(79, 66, 180, 1) 17%, rgba(72, 191, 146, 1) 100%);
-  background-color: black;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 100%;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-image: none;
-}
-
-
-/* Pre-update 0.2.0
-.what-do {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: stretch;
-  align-items: stretch;
-  column-gap: 17px;
-  row-gap: 20px;
-  color: white;
-  font-size: 36px;
-  text-decoration-line: none;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-a:link, a:visited {
-  background-color: white;
-  color: white;
-  border: 2px solid lightsteelblue;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  background-color: rgba(0,191,255, 0.075);
-  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
-  border: 2px rgba(255,255,255,0.4) solid;
-  border-bottom: 2px rgba(40,40,40,0.35) solid;
-  border-right: 2px rgba(40,40,40,0.35) solid;
-}
-
-a:hover, a:active {
-  background-color: lightsteelblue;
-  color: black;
-}
-
-Middle Section
-#tech, #music, #creation {
-  height: 200px;
-  text-align: center;
-  padding: 10% 0px 0px 0px;
-}
-
-#tech p, #music p, #creation p {
-  font-size: 22px;
-}
-
-
-Individual Sections
-#tech-link, #music-link, #creation-link {
-  height: 300px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
+* {
   box-sizing: border-box;
 }
 
-#tech-link {
-  background-color: gray;
+.logo {
+  width: 100%;
+  height: auto;
 }
 
-
-#music-link {
-  background-color: gainsboro;
+.title {
+font-weight: bolder;
+font-size: 147%;
+line-height: 0.1em;
 }
 
-#creation-link {
-  background-color: honeydew;
-}
-
-Social Links and Form
- .icon-bar {
- margin-top: 10%;
-} 
-
-.icon-bar a {
-  display: block;
+.menu {
+  float: left;
+  width: 20%;
   text-align: center;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
-  border-radius: 50%;
-  border: 3.5px rgba(255,255,255,0.4) solid;
 }
 
-.icon-bar a:hover {
-  background-color: #000;
+.menu a {
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
 }
 
-.active {
-  background-color: #04AA6D;
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
 }
 
-h3 {
-  font-size: 200%;
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.tech {
+  background-color: rgba(72, 191, 146, 1);
+}
+
+.music {
+  background-color:  #4B8DA0;
+}
+
+.etc {
+  background-color: #4E5BAD;
 }
 
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-  column-gap: 10px;
-  height: 500px;
-  color: white;
-  text-align: center;
-} */
+  background-color: rgba(79, 66, 180, 1) ;
+}
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+/* TECH MUSIC AND ETC SECTIONS */
+/* TECH MUSIC AND ETC SECTIONS */
+/* TECH MUSIC AND ETC SECTIONS */
+.techmain {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.techtitle {
+  color: rgba(72, 191, 146, 1);
+}
+
+.musictitle {
+  color:  #4B8DA0;
+}
+
+.etctitle {
+  color: #4E5BAD;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.techrow {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.techrow,
+.techrow > .techcolumn {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.techcolumn {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.techrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .techcolumn {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .techcolumn {
+    width: 100%;
+  }
+}
+
+/* CONTACT FORM */
+/* CONTACT FORM */
+/* CONTACT FORM */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
