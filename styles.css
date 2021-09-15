@@ -95,6 +95,10 @@ line-height: 0.1em;
   color: #4E5BAD;
 }
 
+.techtitle, .musictitle, .etctitle {
+  text-align: center;
+}
+
 h1 {
   font-size: 50px;
   word-break: break-all;
