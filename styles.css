@@ -72,7 +72,21 @@ html, body, .list-container button {
   display: none;
 }
 
-/*mobile display*/
-@media screen and (min-width: 1000px) {
+ul {
+  padding-left: 0%;
+}
 
-}}
+.skill-div {
+  display: block;
+  padding: 2.5%;
+  border-bottom: 1px rgba(255,255,255,0.4) solid;
+  padding-left: 0px;
+}
+
+.list-div {
+  display: block;
+  padding: 7.5%;
+  border-bottom: 1px rgba(255,255,255,0.4) solid;
+}
+
+}
