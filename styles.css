@@ -85,8 +85,16 @@ ul {
 
 .list-div {
   display: block;
-  padding: 7.5%;
+  padding: 5%;
   border-bottom: 1px rgba(255,255,255,0.4) solid;
+}
+
+.list-div:hover {
+  background-color: rgba(0, 191, 255, 0.692);
+}
+
+.title {
+  font-size: 36px;
 }
 
 }
