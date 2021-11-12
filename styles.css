@@ -26,6 +26,7 @@ html, body, .list-container button {
 .avatar {
   background-size: cover;
   border: 7.5px solid rgb(35, 29, 70);
+
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -99,6 +100,11 @@ ul {
   padding-left: 0%;
 }
 
+a {
+  text-decoration: unset;
+  color: white;
+}
+
 .skill-div {
   display: block;
   padding: 2.5%;
@@ -112,7 +118,7 @@ ul {
   border-bottom: 1px rgba(255,255,255,0.4) solid;
 }
 
-.list-div:hover {
+.skill-div:hover, .list-div:hover {
   background-color: rgba(0, 191, 255, 0.692);
 }
 
