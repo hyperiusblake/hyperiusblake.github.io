@@ -21,5 +21,5 @@ function openTab(evt, tabName) {
   //Arrow Functionality
   var T = document.getElementById("pointer");
   T.style.display = "block";
-  T.scrollIntoView();
+  T.scrollIntoView({behavior: "smooth"});
 }
