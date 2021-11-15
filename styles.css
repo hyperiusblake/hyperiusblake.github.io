@@ -5,7 +5,7 @@ html, body, .list-container button {
   padding: 0;
   background-color: rgb(35, 29, 70);
   color: whitesmoke;
-  overflow-x: none;
+  overflow-x: auto;
 }
 
 .header {
@@ -51,18 +51,11 @@ html, body, .list-container button {
 }
 
 .contact {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  border: none;
-  border-radius: 44%;
-  color: white;
-  padding: 10px 28px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 12px;
-  margin: 2px 1px;
-  cursor: pointer;
-  background-color: rgb(76, 15, 146);
-  font-family: 'Lobster', cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Tabs */

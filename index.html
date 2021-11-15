@@ -5,6 +5,7 @@
 	<title>Robin Blake</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Dosis">
   <link rel="stylesheet"
@@ -17,7 +18,7 @@
 		<!--paisley image-->
 	</section>
 	<div class="avatar-container">
-		<img class="avatar" src="images\gghghghg.jpg">
+		<img class="avatar" src="images\gghghghg.jpg" alt="avatar">
 	</div>
 	<section class="about">
 		<h1 class="name">Robin Blake</h1>
@@ -26,13 +27,33 @@
 			problem solver/lifelong learner.<br>
 			<b>Regularly misunderstood, always gaining understanding.</b><br>
 		</p>
-		<button class="contact">Contact</button><br><br>
+		<div id="pointer" style="display:none"></div>
+		<div class="contact">
+			<a href="https://www.linkedin.com/in/robindeanblake/" alt="linkedin">
+				<i class="fa fa-linkedin-square" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
+			  </a>
+			  <a href="https://www.instagram.com/hyperiusblake/" alt="instagram">
+				<i class="fa fa-instagram" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
+			  </a>
+			  <a href="mailto:robindeanblake@gmail.com" alt="email">
+				<i class="fa fa-envelope" aria-hidden="true" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
+			  </a>
+			  <a href="https://open.spotify.com/user/barisax0228" alt="spotify">
+				<i class="fa fa-spotify" aria-hidden="true" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
+			  </a>
+			  <a href="https://www.facebook.com/barisax228/" alt="facebook">
+				<i class="fa fa-facebook-official" aria-hidden="true" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
+			  </a>
+		</div><br><br>
 		</section>
 		<!--Skills/Projects Sections-->
 		<nav class="list-container">
-				<button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
-				<button class="tablinks" onclick="openTab(event, 'projects')">Projects</button>
-				<button class="tablinks" onclick="openTab(event, 'achievements')">Achievements</button>
+				<button class="tablinks" onclick="openTab(event, 'skills')">Skills
+				</button>
+				<button class="tablinks" onclick="openTab(event, 'projects')">Projects
+				</button>
+				<button class="tablinks" onclick="openTab(event, 'achievements')">Achievements
+				</button>
 		</nav>
 		<div class="tabcontent" id="skills">
 			<ul>
