@@ -1,121 +1,481 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Robin Blake - Technologist, Organizer, Creative</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+	<!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+	<!-- Custom Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body id="top">
 
-<head>
-	<title>Robin Blake</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Dosis">
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Lobster">
-	<script type="text/javascript" src="query.js"></script>
-</head>
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
 
-<body>
-	<section class="header">
-		<!--paisley image-->
-	</section>
-	<div class="avatar-container">
-		<img class="avatar" src="images\gghghghg.jpg" alt="avatar">
-	</div>
-	<section class="about">
-		<h1 class="name">Robin Blake</h1>
-		<p class="blurb">developer.<br>
-			creative.<br>
-			problem solver/lifelong learner.<br>
-			<b>Regularly misunderstood, always gaining understanding.</b><br>
-		</p>
-		<div id="pointer" style="display:none"></div>
-		<div class="contact">
-			<a href="https://www.linkedin.com/in/robindeanblake/" alt="linkedin">
-				<i class="fa fa-linkedin-square" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
-			  </a>
-			  <a href="https://www.instagram.com/hyperiusblake/" alt="instagram">
-				<i class="fa fa-instagram" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
-			  </a>
-			  <a href="mailto:robindeanblake@gmail.com" alt="email">
-				<i class="fa fa-envelope" aria-hidden="true" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
-			  </a>
-			  <a href="https://open.spotify.com/user/barisax0228" alt="spotify">
-				<i class="fa fa-spotify" aria-hidden="true" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
-			  </a>
-			  <a href="https://www.facebook.com/barisax228/" alt="facebook">
-				<i class="fa fa-facebook-official" aria-hidden="true" style="text-shadow: 2px 2px 4px #000000;font-size:48px;color:rgba(0, 191, 255, 0.692)"></i>
-			  </a>
-		</div><br><br>
-		</section>
-		<!--Skills/Projects Sections-->
-		<nav class="list-container">
-				<button class="tablinks" onclick="openTab(event, 'skills')">Skills
-				</button>
-				<button class="tablinks" onclick="openTab(event, 'projects')">Projects
-				</button>
-				<button class="tablinks" onclick="openTab(event, 'achievements')">Achievements
-				</button>
-		</nav>
-		<div class="tabcontent" id="skills">
-			<ul>
-				<li class="skill-div">HTML/CSS (LinkedIn Certified), Javascript</li>
-				<li class="skill-div"><a href="https://freecodecamp.org/certification/hyperiusblake/responsive-web-design">Responsive Web Design (FreeCodeCamp Certification @ link)</a></li>
-				<li class="skill-div">C#/.NET (Tech Elevator Certified)</li>
-				<li class="skill-div">SQL</li>
-				<li class="skill-div">Vue.js, React</li>
-				<li class="skill-div">Java</li>
-				<li class="skill-div">Kotlin/Android Studio</li>
-				<li class="skill-div">Git/Version Control</li>
-				<li class="skill-div">Project Design/Coordination, Vendor Management, Budget Management</li>
-				<li class="skill-div">Art Curation</li>
-				<li class="skill-div">Written Communication</li>
-				<li class="skill-div">Customer Service</li>
-			</ul></div>
-		<div class="tabcontent" id="projects">
-			<li class="list-div" onclick="location.href='https:\/\/github.com/hyperiusblake/DogPhotoApp';">
-					<p class="title">Dog Photo App</p>
-					<p class="info">Used Kotlin/Android Studio to create an app that provides adorable puppers with a click!</p>
-			</li>
-			<li class="list-div" onclick="location.href='https:\/\/github.com/hyperiusblake/vending-machine';" >
-					<p class="title">Vending Machine</p>
-					<p class="info">Created a console app simulating a vending machine in order to display proficiency with Object Oriented Programming in C# and File I/O.
-					</p>
-			</li>
-			<li class="list-div" onclick="location.href='https:\/\/github.com/hyperiusblake/PocketDM';">
-					<p class="title">PocketDM</p>
-					<p class="info">This application eliminates the need to purchase a 100-sided die/reference outside sources for results.</p>
-			</li>
-			<li class="list-div" onclick="location.href='https:\/\/github.com/hyperiusblake/3-column-preview-card-component-main';">
-					<p class="title">3 Column Card Component</p>
-					<p class="info">An HTML/CSS challenge by @frontendmentor.</p>
-			</li>
+
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <h1 class="animated fadeInDown">
+                    R<span style="color:#7243e0;">o</span>bin<br/>
+                    <span>Bl<span style="color:#dbacff">a</span>ke</span>
+                  </h1><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Technologist, Creative, Organizer</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			            <p>SEE MORE</p>
+			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+			        </a>
+                </div>
+              </div>
+            </div>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Who <span>am</span> I?</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>I am a passionate individual who loves work that brings meaning to people's lives. As an creative whose life intersects with technology, I represent STEAM (Science, Technology, Engineering, Arts, Mathematics) and use that experience to uplift marginalized communities through increased access to art and technology. My heart is at the intersection of humanity and technology. I want to use computers and technology to help people and make life more accessible. Access, design, creation, opportunity. A lifelong learner, I always seek ways to improve upon my existing skills while endlessly acquiring new ones - continual improvement is a lifestyle for me. My goal is simple: I want to leave the world a better place than I found it.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+<!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="container">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">I do cool things</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                      <i class=" 	fa fa-code"></i><!-- Icon -->
+                    </div>
+                    <h2>Technologist</h2><!-- Title -->
+                    <p>I leverage my knowledge of coding and UX to develop projects and bring ideas to life. </p><!-- Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class=" 	fa fa-music"></i><!-- Icon -->
+                    </div>
+                    <h2>Creative</h2><!-- Title -->
+                    <p>I am a multi-disciplinary artist with an eye for design and a passion for creating meaningful things.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                      <i class=" 	fa fa-puzzle-piece"></i><!-- Icon -->
+                    </div>
+                    <h2>Organizer</h2><!-- Title -->
+                    <p>I uplift vulnerable members of our society by utilizing my organizational and project management skills to bring events to the community.</p><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+		<div class="container-fluid">
+		    <!-- About 1 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="filter: grayscale(100%); background-image:url(img/image-from-rawpixel-id-5916445-jpeg.jpg)"></div><!-- about image 1 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Coding</h6><!-- headline-->
+					<p>A graduate of tech bootcamps from Google and Tech Elevator, I've had the privilege of wearing many hats and learning the ins and outs of being a full-stack developer.</p><br><!-- About Text 1 -->
+					<a href="code.html" class="weight-outline-btn">Read more</a><!-- read more button  -->			
+				</div>
+			</div>
+			<!-- About 2 -->
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<h6>Art</h6><!-- Headline -->
+					<p>I'm a multi-instrumentalist, vocalist, and composer with a mix of professional and practical experience. I manage my own music collective and dabble in graphic design.</p><br><!-- About Text 2 -->
+					<a href="art.html" class="weight-outline-btn">Read more</a>	<!-- read more button  -->				
+				</div>
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="filter: grayscale(100%); background-image:url(img/image-from-rawpixel-id-8905921-jpeg.jpg)"></div><!-- about image 2 -->
+				</div>
+			</div>
+			<!-- About 3 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="filter: grayscale(100%); background-image:url(img/image-from-rawpixel-id-5928072-jpeg.jpg)"></div><!-- about image 3 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Project Management</h6><!-- Headline-->
+					<p>From managing my own art festival, Creation, I have learned a great deal about what it takes to be a master of logistics and to see a project from conception to completion.</p><br><!-- About Text 3 -->
+					<a href="organize.html" class="weight-outline-btn">Read more</a><!-- read more button  -->					
+				</div>
+			</div>
 		</div>
-		<div class="tabcontent" id="achievements">
-			<li class="list-div" onclick="location.href='http:\/\/robinblakesoundexperiment.com/';">
-				<p class="title">The Robin Blake Sound Experiment</p>
-				<p class="info">My music collective. We combine improvisation and groove to create unique, quality sound.</p>
-		</li>
-		<li class="list-div" onclick="location.href='';">
-			<p class="title">Creation: A Celebration of Art, Music, and Life</p>
-			<p class="info">Conceptualized, developed, and executed an arts/music mini festival in Cleveland. Creation has facilitated around $6,000 in donations to various organizations around the city, a 700% growth over two years/4 iterations.</p>
-		</li>
-		<li class="list-div" onclick="location.href='https:\/\/www.facebook.com/CleveShakes/photos/a.10156288106731615/10156288107081615/';">
-			<p class="title">Composer, Cleveland Shakespeare Festival 2019 (Much Ado About Nothing)</p>
-			<p class="info">Composed and recorded the musical aspects of the Cleveland Shakespeare Festival's production of "Much Ado About Nothing". This included sound bytes for transitions, an original piece for two guitars and voice, and a few small overtures for dance.</p>
-		</li>
-		<li class="list-div" onclick="location.href='https:\/\/afropunk.com/2015/07/op-ed-is-it-time-to-re-evaluate-the-churchs-role-in-the-civil-rights-movement/';">
-			<p class="title">Charleston Syllabus</p>
-			<p class="info">An article of mine was published first on AFROPUNK, then in "The Charleston Syllabus" by the African American Intellectual Historical Society.</p>
-	</li>
-	<li class="list-div" onclick="location.href='https:\/\/soundcloud.com/user-386063300';">
-		<p class="title">Soundcloud</p>
-		<p class="info">where I throw up side projects/ideas. It's like Github for musicians!</p>
-</li>
-<li class="list-div" onclick="location.href='https:\/\/clevelandclassical.com/cusp-nakatani-gong-orchestra-at-historic-st-johns-mar-30/';">
-	<p class="title">Nakatani Gong Orchestra</p>
-	<p class="info">I was a participant of this in 2018, through the Cleveland Uncommon Sound Project (CUSP), an organization that supports the creation of new/experimental music by living composers.</p>
-</li>
-		</div>
-	</section>
-</body>
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
 
+		
+		
+		
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+        <section class="swag text-center" id="portfolio">
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <h1 class="arrow">
+               <span>Projects</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row row-offset-0">
+  				 
+          <!-- PORTFOLIO ITEM 1 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/1.png" data-lightbox="roadtrip" title="Check out Creation, the festival that I manage. The website is currently being built, but we have a robust IG with all of our content and information. <a href='https://www.instagram.com/creationcleveland/'>See More</a>"><img class="grayscale" style=height:400px src="images/53803603_409989206243926_2042988313459032064_n.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	
+  	    <!-- PORTFOLIO ITEM 2 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/140996473-8c42819a-8e38-40cb-b9f4-c44698461b80.png" data-lightbox="roadtrip" title="An HTML/CSS challenge by @frontendmentor. <a href='https://github.com/hyperiusblake/3-column-preview-card-component-main?tab=readme-ov-file'>See More</a>"><img class="grayscale" style=height:400px src="images/140996473-8c42819a-8e38-40cb-b9f4-c44698461b80.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 3 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/PocketDM.png" data-lightbox="roadtrip" title="This application eliminates the need to purchase a 100-sided die/reference outside sources for results. <a href='https://github.com/hyperiusblake/PocketDM'>See More</a>"><img class="grayscale" style=height:400px src="images/PocketDM.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 4 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/e914fe228bcd4ed68b666273352525e3.png" data-lightbox="roadtrip" title="For my final capstone with Google's Tech Equity Program, my group made an Android app we called Techbook, a hybrid between Linkedin and Facebook. I was the lead on design and UX. <a href='https://github.com/theetechbook/techbook'>See More</a>"><img class="grayscale" style=height:400px src="images/techbook.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	             
+          <!-- PORTFOLIO ITEM 5 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/williamsblain_charlestonsyllabus_hp.jpg" data-lightbox="roadtrip" title="An article of mine was chosen to be published in this collection by the African American Intellectual Historical Society. | <a href='https://www.aaihs.org/resources/charlestonsyllabus/'>See More</a>"><img class="grayscale" style=height:400px;width:290px; src="images/williamsblain_charlestonsyllabus_hp.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  	
+  	    <!-- PORTFOLIO ITEM 6 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/IMG_9376.JPG" data-lightbox="roadtrip" title="This is the press kit for my band/musical endeavors. If you want to know more about my musical experience, it's all here! | <a href='http://bit.ly/hyperiusblake/'>See More</a>"><img class="grayscale" src="images/IMG_9376.JPG" style=height:400px;width:290px alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 7 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/Hungr.png" data-lightbox="roadtrip" title="My capstone for Tech Elevator was a site called Hungr, a Tinder clone meant to help people choose restaurants dependent upon their location and preferences. <a href='http://google.com'>See More</a>"><img class="grayscale" style=height:400px src="images/Hungr.png" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+  		<!-- PORTFOLIO ITEM 8 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="images/vend.webp" data-lightbox="roadtrip" title="This is my first Capstone from my time at Tech Elevator, meant to display our proficiency with Object Oriented Programming in the C#/.NET language after 4 weeks. <a href='https://github.com/hyperiusblake/vending-machine'>See More</a>"><img class="grayscale" style=height:400px src="images/vend.webp" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+        </div><!--/row-->
+      </div><!--/.container-->
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+
+
+		
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+          <br>
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Reach <span>out</span>, let's <span>work</span> together</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Location</span></h2>
+                  <p>Cleveland, OH</p>
+                </div>
+              </div>
+			  <!-- Phone Number Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>(216) 714-3081</p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">robindeanblake@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+            <!--
+			<div class="row">
+			  <div class="col-md-6 contact">
+			     <form role="form">
+				            <!-- Name -->
+                            <div class="row">
+                                <div class="col-md-6">
+								    <!-- E-Mail -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+								    <!-- Phone Number -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+							<!-- Message Area -->
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Write your message here..." style="height:232px;"></textarea>
+                            </div>
+							<!-- Subtmit Button -->
+                            <button type="submit" class="btn btn-send">
+                                Send message
+                            </button>
+                        </form>
+			  </div>
+			</div>
+			<br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="https://www.linkedin.com/in/robindeanblake/" class="social-btn"><i class="fa fa-linkedin"></i></a></li><!-- linkedin -->
+                  <li><a href="instagram.com/creationcleveland" class="social-btn"><i class="fa fa-instagram"></i></a></li><!-- Creation IG -->
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-github"></i></a></li><!-- facebook -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+		
+		
+		
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+              </div>
+            </div>
+          </div>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->		
+		
+		
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps --> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
+
+	<!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+    // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+    
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+                
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York 
+
+                // How you would like to style the map. 
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
+
+            // Get the HTML DOM element that will contain your map 
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('googlemaps');
+
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+	
+    </script>
+	
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
+    </script>
+	
+    </body>
 </html>
